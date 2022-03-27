@@ -11,7 +11,7 @@ button.addEventListener("click", async () => {
     `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
   );
 
-  console.log(response.data[0].meanings);
+ 
   buttonSpinner.classList.add("d-none");
 
   //  MAIN FOR LOOP
@@ -29,7 +29,7 @@ button.addEventListener("click", async () => {
   <div class="col-12 mb-3"><b>Definitions</b> :</div>    
     ${element.definitions
       .map((item, index) => {
-        console.log(item);
+       
         return `
         <p> ${item.definition}</p>
       `;
