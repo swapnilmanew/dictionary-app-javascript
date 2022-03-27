@@ -31,7 +31,7 @@ button.addEventListener("click", async () => {
       .map((item, index) => {
        
         return `
-        <p> ${item.definition}</p>
+        <p><i class="bi bi-bookmark-check-fill"></i> ${item.definition}</p>
       `;
       })
       .join(" ")}
